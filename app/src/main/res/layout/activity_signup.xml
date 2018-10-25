@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Signup">
+
+    <EditText
+    android:id="@+id/et"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="22dp"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/edittext"
+    android:hint="Name"
+    android:padding="10dp"
+    android:inputType="textPersonName"
+    android:textColor="@android:color/black" />
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/edittext"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="@android:color/black" />
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/edittext"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@android:color/black" />
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/edittext"
+        android:hint="Choose a Username"
+        android:padding="10dp"
+        android:textColor="@android:color/black" />
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/edittext"
+        android:hint="Choose a Password"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="320dp"
+        android:layout_height="38dp"
+        android:layout_alignStart="@+id/et"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="57dp"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/button_style"
+        android:text="Submit"
+        android:textSize="20dp"
+        android:id="@+id/button1"/>
+</RelativeLayout>

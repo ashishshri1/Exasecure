@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Portal"
+    android:id="@+id/drawer">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Account Details"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:background="#222930"
+            android:textColor="#E9E9E9"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:background="#222930"
+            android:textColor="#E9E9E9"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginTop="200dp"
+            android:text=""
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:background="#222930"
+            android:textColor="#E9E9E9"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginTop="300dp"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/button_style"
+            android:text="Done"
+            android:textSize="20dp"
+            android:id="@+id/button1"/>
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="80dp"
+            android:textSize="15dp"
+            android:text="Account's Name"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="180dp"
+            android:textSize="15dp"
+            android:text="Account's Username"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="280dp"
+            android:textSize="15dp"
+            android:text="Account's Password"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:itemTextColor="@color/darkgray"
+        android:id="@+id/navview"
+        app:itemIconTint="@color/darkgray"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/drawermenu"
+        android:layout_gravity="start">
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

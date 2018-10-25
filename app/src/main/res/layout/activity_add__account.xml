@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Add_Account"
+    android:id="@+id/drawer1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Add Account"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="350dp"
+            android:text=""
+            android:id="@+id/warn"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/edittext"
+            android:hint="Account's Name"
+            android:padding="10dp"
+            android:textColor="@android:color/black" />
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/edittext"
+            android:hint="Account's Username"
+            android:padding="10dp"
+            android:textColor="@android:color/black" />
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/edittext"
+            android:hint="Account's Password"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:inputType="textPassword"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/button_style"
+            android:text="SAVE"
+            android:textSize="20dp"
+            android:id="@+id/submit"/>
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:itemTextColor="@color/darkgray"
+        android:id="@+id/navview1"
+        app:itemIconTint="@color/darkgray"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/drawermenu"
+        android:layout_gravity="start">
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

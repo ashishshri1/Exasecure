@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Exasecure</string>
+    <string name="signup">Signup</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_about">About</string>
+    <string name="large_text">
+        "No more Forgot Passwords...\n"
+        "Use Exasecure to manage all your accounts\n"
+        "No more worries about security...\n"
+        "Use Exasecure to keep your data securely"
+    </string>
+    <string name="small_text">
+        "Exasecure is an account managing application that keeps usernames and passwords of your various accounts used on websites and apps in your phone's database in encrypted form.\n"
+        "You can see your account's details whenever you want.\n\n"
+        "Following functionalities are provided in the app:\n"
+        "1. You can click on Add Account to add an account's details which then will be stored in your phone's database in encrypted form.\n"
+        "Here we use a 4 digit key to encrypt your data which is not saved in your phone's database providing high security.\n"
+        "2. You can click on Know Account to know your desired account's details whenever you want.\n"
+        "3. You can click on Delete Account if you had filled wrong account's details or you account don't exists in present.\n"
+        "4. You can click on Change Key to change the value of your key which is used to perform encryption of your account's data when you think your key might have been stolen just like you change your ATM pin."
+    </string>
+    <string name="points">
+        "Important Points-\n"
+        "1. Never login using a wrong key, this will give you wrong account's details and then if you change the key, all your details will be permanently updated to wrong details which can never be restored.\n"
+        "2. For more security always logout, so that no one can access your real data by decrypting your details manually using your key stored in Shared preferences(which is deleted from it after logout) by looking into your phone's database files."
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>
